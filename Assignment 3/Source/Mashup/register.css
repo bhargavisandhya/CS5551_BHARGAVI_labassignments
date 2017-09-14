@@ -1,0 +1,36 @@
+select
+{
+    border:solid 1px #edd033;
+    padding:16px;
+}
+body
+{
+    font-family: "Arial";
+    font-size: LARGE;
+}
+
+input
+{
+    -moz-border-radius: 20px;
+    font-size: large;
+    border-radius: 25px;
+    border:ITALIC 20px #88ed1f;
+    padding:10px;
+    class:"form-control";
+}
+div
+{
+    class:"form-group";
+    margin:10px;
+}
+#leftDiv{
+    padding-right: 5px;
+    display:table-cell;
+    text-align:CENTER;
+}
+
+#rightDiv{
+    padding-left: 10px;
+    text-align:CENTER;
+    display:table-cell;
+}

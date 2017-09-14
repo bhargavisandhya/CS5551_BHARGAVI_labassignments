@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <title>BHS</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap-theme.min.css" integrity="sha384-rHyoN1iRsVXV4nD0JutlnGaslCJuC7uwjduW9SVrLvRYooPp2bWYgmgJQIXwl/Sp" crossorigin="anonymous">
+    <link rel="stylesheet" href="register.css">
+    <title>Registration Page</title>
+    <script>
+        function registration()
+        {
+            if(document.getElementById('fn').value.length>0 && document.getElementById('ln').value.length>0 && document.getElementById('username').value.length>0 && document.getElementById('email').value.length>0 && document.getElementById('password').value.length>0 && document.getElementById('cpassword').value.length>0 &&
+                ( document.getElementById('cpassword').value ==document.getElementById('password').value))
+            {
+                localStorage.setItem('UserName',(document.getElementById('username').value));
+                localStorage.setItem('Password',(document.getElementById('password').value));
+                window.location.href='LoginPage.html';
+            }
+            else
+            {
+                alert('HEY, you have MISSED entering few details !');
+            }
+        }
+    </script>
+</head>
+<body style="background-image:url('http://wallpapercave.com/wp/Aq9qhbS.jpg') ; background-size:80% , no-repeat">
+<center>
+    <h1><center><img src="http://sportscommunity.com.au/wp-content/uploads/2015/06/Button-ENTER-Here.jpeg" height="98" alt="BHS"></center></h1>
+    <form>
+        <div>
+            <div>
+                <input id="fn" type="text"  name="firstName" placeholder="ENTER First name" size="15" value=""/>
+            </div>
+            <div>
+                <input id="ln" type="text" name="lastName" placeholder="ENTER Last name" size="15" value=""/>
+            </div>
+        </div>
+        <div> <input id="username" type="text" name="username" placeholder="Enter THE UserName" size="15" ></div>
+        <div>
+            <input id="email" type="email" name="email" placeholder="Email" size=15>
+        </div>
+        <div>
+            <input id="password" type="password" name="password12" PLACEHOLDER="ENTER PASSWORD"  size=15>
+        </div>
+        <div>
+            <input id="cpassword" type="password" name="password11" placeholder="enter PASSWORD" size=15>
+        </div>
+        </div>
+
+        <div>
+          MOBILENO:  <input id="mobile" type="text"   size="30">
+        </div>
+        <div>
+            BIRTHDAY : <input id="bday" type="date" name="bday" style="width:20%">
+            <BR>
+        </div>
+        <div>
+            GENDER : <select id="gender" name="gender" style="width: 20%">
+            <option selected disabled>Gender</option>
+            <option>FEMALE</option>
+            <option>MALE</option>
+            <option>NOT TO SPECIFY</option>
+        </select>
+            <BR>
+        </div>
+        <input type="button" name="Register" value="REGISTER" onclick="registration()">
+        <a type="button" style="color:YELLOW; font-weight: bold" href="Registration.html">ENTERagain</a>
+        <a type="button" style="color:#fffb5e; font-weight: bold" href="LoginPage.html">ENTER</a>
+
+    </form>
+</center>
+</body>
