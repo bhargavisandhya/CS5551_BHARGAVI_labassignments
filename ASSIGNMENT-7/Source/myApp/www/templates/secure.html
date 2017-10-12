@@ -1,0 +1,30 @@
+<ion-view title="Speech Fun">
+      <ion-header-bar class="bar-stable" >
+        <h1 class="title">Cordova Text-to-Speech</h1>
+      </ion-header-bar>
+      <ion-content class="padding">
+           <div class="row row-center" >
+        <div class="col text-center" >
+            <img id="speechImage" src="http://cdn02.androidauthority.net/wp-content/uploads/2016/02/text-to-speech-840x560.jpg">
+        </div>
+      </div>
+        <div class="list list-inset">
+          <label class="item item-input">
+            <i class="icon ion-speakerphone placeholder-icon"></i>
+            <input type="text" placeholder="SPEEK....." ng-model="data.speechText">
+          </label>
+        </div>
+        <button class="button button-full button-positive" ng-click="speakText()">
+          SAY IT HERE
+        </button>
+
+        <button class="button button-full button-positive"ng-click="record()">
+          GET RESULT
+        </button>
+        <div class="card">
+          <div class="item item-text-wrap">
+            hey..!! HELLOO..!!
+          </div>
+        </div>
+      </ion-content>
+    </ion-view>

@@ -1,0 +1,30 @@
+<ion-view view-title="BAR CODE SCANNING">
+    <ion-content  class="padding">
+        <div class="row row-center" >
+        <div class="col text-center" >
+            <img src="http://adcbarcode.com/wp-content/uploads/2015/09/Barcode-scanner.jpg">
+        </div>
+      </div>
+        <div class="card">
+            <div class="item">
+                <button class="button button-block button-positive" ng-click="scan()">
+                    <i class="icon ion-qr-scanner"></i>
+                    SCAN NOW
+                </button>
+                <button class="button button-block button-positive" ng-click="scanresult()">
+                    <i class="icon ion-qr-scanner"></i>
+                    GET INFORMATION
+                </button>
+            </div>
+        </div>
+
+        <div class="card">
+            <div class="item item-divider">
+                Scan Results
+            </div>
+            <div class="item item-text-wrap">
+                {{vm.scanResults}}
+            </div>
+        </div>
+    </ion-content>
+</ion-view>

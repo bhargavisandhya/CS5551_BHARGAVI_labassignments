@@ -1,0 +1,64 @@
+/* Empty. Add your own CSS if you like */
+img{
+    -webkit-user-drag: none;
+    width: 100% !important;
+    height: 100% !important;
+    max-width: 100px !important;
+    max-height: 100px !important;
+}
+#speechImage{
+    -webkit-user-drag: none;
+    width: 100% !important;
+    height: 100% !important;
+    max-width: 150px !important;
+    max-height: 200px !important;
+}
+.button.button-balanced {
+    border-color: transparent;
+    background-color: rgba(121, 38, 249, 0.19);
+    color: #ffaeac;
+}
+.button.button-balanced:hover{
+     background-color: rgba(121, 38, 249, 0.17);
+}
+.balanced{
+    float:right;
+    font-size:16px;
+}
+#result{
+    -webkit-user-drag: none;
+    width: 100% !important;
+    height: 100% !important;
+    max-width: 200px !important;
+    max-height: 200px !important;
+}
+#scan{
+    background-image:url('../img/screen.png');
+     background-repeat: no-repeat;
+    background-size: cover;
+}
+#facebook{
+    background-color: #7aef1f;
+}
+#x{
+    color: rgba(220, 0, 0, 0.98);
+}
+.error {
+    color: #ff2120;
+    font-weight: bold;
+}
+.success{
+    color: rgb(133, 0, 0);
+    font-weight: bold;
+}
+#facebook{
+    background:#648abf;
+}
+#gmail{
+    background: rgba(220, 0, 0, 0.89);
+}
+.pane{
+    background-image: url('http://media.istockphoto.com/photos/colorful-wooden-background-rainbow-color-picture-id477728514?k=6&m=477728514&s=612x612&w=0&h=pTo61JyGw2LGn2-nys6CNxCJ9tTIFVvBEEHsEF8pHLQ=');
+    background-repeat: no-repeat;
+    background-size: cover;
+}
